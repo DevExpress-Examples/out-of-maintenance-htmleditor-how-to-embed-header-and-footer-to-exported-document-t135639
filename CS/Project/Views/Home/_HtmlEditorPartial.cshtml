@@ -1,0 +1,13 @@
+@using T135508.Controllers;
+
+@Html.DevExpress().HtmlEditor(settings => {
+    settings.Name = "HtmlEditor";
+    settings.CallbackRouteValues = new { Controller = "Home", Action = "HtmlEditorPartial" };
+    settings.Width = 800;
+    settings.ToolbarMode = HtmlEditorToolbarMode.Menu;
+
+    settings.SettingsImageUpload.UploadCallbackRouteValues = new { Controller = "Home", Action = "HtmlEditorPartialImageUpload" };
+    settings.SettingsImageUpload.UploadImageFolder = HomeControllerControllerHtmlEditorSettings.ImageUploadDirectory;
+    settings.SettingsImageUpload.ValidationSettings.Assign(HomeControllerControllerHtmlEditorSettings.ImageUploadValidationSettings);
+    settings.SettingsImageSelector.Assign(HomeControllerControllerHtmlEditorSettings.ImageSelectorSettings);
+}).GetHtml()
