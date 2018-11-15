@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [HomeController.cs](./CS/Project/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/Project/Controllers/HomeController.vb))
+* [_HtmlEditorPartial.cshtml](./CS/Project/Views/Home/_HtmlEditorPartial.cshtml)
+* **[Index.cshtml](./CS/Project/Views/Home/Index.cshtml)**
+<!-- default file list end -->
 # HtmlEditor - How to embed Header and Footer to exported document
 
 
