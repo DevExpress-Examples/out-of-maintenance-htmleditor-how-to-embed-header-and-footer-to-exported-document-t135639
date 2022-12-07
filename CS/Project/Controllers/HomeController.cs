@@ -73,7 +73,7 @@ namespace T135508.Controllers {
         public const string ImageUploadDirectory = "~/Content/UploadImages/";
         public const string ImageSelectorThumbnailDirectory = "~/Content/Thumb/";
 
-        public static DevExpress.Web.ASPxUploadControl.ValidationSettings ImageUploadValidationSettings = new DevExpress.Web.ASPxUploadControl.ValidationSettings() {
+        public static DevExpress.Web.UploadControlValidationSettings ImageUploadValidationSettings = new DevExpress.Web.UploadControlValidationSettings() {
             AllowedFileExtensions = new string[] { ".jpg", ".jpeg", ".jpe", ".gif", ".png" },
             MaxFileSize = 4000000
         };

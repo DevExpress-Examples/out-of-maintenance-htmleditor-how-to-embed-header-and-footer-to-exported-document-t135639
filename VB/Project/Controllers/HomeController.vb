@@ -75,7 +75,7 @@ Namespace T135508.Controllers
 		Public Const ImageUploadDirectory As String = "~/Content/UploadImages/"
 		Public Const ImageSelectorThumbnailDirectory As String = "~/Content/Thumb/"
 
-        Public Shared ImageUploadValidationSettings As New DevExpress.Web.ASPxUploadControl.ValidationSettings() With
+        Public Shared ImageUploadValidationSettings As New DevExpress.Web.UploadControlValidationSettings() With
             {.AllowedFileExtensions = New String() {".jpg", ".jpeg", ".jpe", ".gif", ".png"}, .MaxFileSize = 4000000}
 
 		Private Shared imageSelectorSettings_Renamed As DevExpress.Web.Mvc.MVCxHtmlEditorImageSelectorSettings
